@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriTrade - Bulk Affairs Global Services LTD</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>🌾 AgriTrade</h1>
+                <p>Bulk Affairs Global Services LTD</p>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#products" onclick="closeMenu()">Products</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🌱 Connecting Farmers to Global Markets</h1>
+                <p>Empowering agricultural traders and farmers with modern trading solutions, market access, and fair prices.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Farmers Connected</p>
+                </div>
+                <div class="stat">
+                    <h3>1000+</h3>
+                    <p>Trade Deals Done</p>
+                </div>
+                <div class="stat">
+                    <h3>50+</h3>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat">
+                    <h3>₦500M+</h3>
+                    <p>Trade Volume</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Bulk Affairs Global Services</h2>
+                <p>Bridging the gap between farmers and global markets</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon">🌾</div>
+                    <h3>Our Mission</h3>
+                    <p>To revolutionize agricultural trading by providing fair prices, market access, and modern trading tools to farmers and traders across Nigeria.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">📈</div>
+                    <h3>Our Vision</h3>
+                    <p>To become Africa's leading agricultural trading platform, connecting millions of farmers to global markets and ensuring food security.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">🤝</div>
+                    <h3>Our Values</h3>
+                    <p>Transparency, Fair Trade, Sustainability, Innovation, and Empowering local farming communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive agricultural trading solutions</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" onclick="serviceInquiry('Market Intelligence')">
+                    <div class="icon">📊</div>
+                    <h3>Market Intelligence</h3>
+                    <p>Real-time market prices, trends, and insights to help you make informed trading decisions.</p>
+                    <span class="service-action">Click to inquire →</span>
+                </div>
+                <div class="service-card" onclick="serviceInquiry('Logistics & Delivery')">
+                    <div class="icon">🚚</div>
+                    <h3>Logistics & Delivery</h3>
+                    <p>Reliable transportation and delivery services for your agricultural produce across Nigeria.</p>
+                    <span class="service-action">Click to inquire →</span>
+                </div>
+                <div class="service-card" onclick="serviceInquiry('Trade Financing')">
+                    <div class="icon">💰</div>
+                    <h3>Trade Financing</h3>
+                    <p>Access to affordable financing options for farmers and traders to grow their businesses.</p>
+                    <span class="service-action">Click to inquire →</span>
+                </div>
+                <div class="service-card" onclick="serviceInquiry('Digital Marketplace')">
+                    <div class="icon">📱</div>
+                    <h3>Digital Marketplace</h3>
+                    <p>Online platform to connect buyers and sellers of agricultural products directly.</p>
+                    <span class="service-action">Click to inquire →</span>
+                </div>
+                <div class="service-card" onclick="serviceInquiry('Export Support')">
+                    <div class="icon">🌍</div>
+                    <h3>Export Support</h3>
+                    <p>Guidance and support for exporting agricultural products to international markets.</p>
+                    <span class="service-action">Click to inquire →</span>
+                </div>
+                <div class="service-card" onclick="serviceInquiry('Training & Education')">
+                    <div class="icon">🎓</div>
+                    <h3>Training & Education</h3>
+                    <p>Workshops and training programs on modern farming techniques and trading strategies.</p>
+                    <span class="service-action">Click to inquire →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Premium agricultural produce from Nigerian farmers</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🌾</div>
+                    <h3>Grains</h3>
+                    <p>Maize, Rice, Wheat, Sorghum</p>
+                    <span class="price">From ₦50,000/ton</span>
+                    <button class="btn btn-primary inquire-btn" onclick="inquireProduct('Grains')">📞 Inquire Now</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🌿</div>
+                    <h3>Cassava Products</h3>
+                    <p>Cassava Flour, Garri, Starch</p>
+                    <span class="price">From ₦30,000/ton</span>
+                    <button class="btn btn-primary inquire-btn" onclick="inquireProduct('Cassava Products')">📞 Inquire Now</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🥜</div>
+                    <h3>Legumes & Oilseeds</h3>
+                    <p>Soybeans, Groundnuts, Sesame</p>
+                    <span class="price">From ₦45,000/ton</span>
+                    <button class="btn btn-primary inquire-btn" onclick="inquireProduct('Legumes & Oilseeds')">📞 Inquire Now</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🍫</div>
+                    <h3>Cash Crops</h3>
+                    <p>Cocoa, Coffee, Cotton</p>
+                    <span class="price">From ₦80,000/ton</span>
+                    <button class="btn btn-primary inquire-btn" onclick="inquireProduct('Cash Crops')">📞 Inquire Now</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🍅</div>
+                    <h3>Vegetables</h3>
+                    <p>Tomatoes, Peppers, Onions</p>
+                    <span class="price">From ₦20,000/ton</span>
+                    <button class="btn btn-primary inquire-btn" onclick="inquireProduct('Vegetables')">📞 Inquire Now</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🐔</div>
+                    <h3>Poultry & Fish</h3>
+                    <p>Poultry, Fish, & Livestock Products</p>
+                    <span class="price">From ₦15,000/ton</span>
+                    <button class="btn btn-primary inquire-btn" onclick="inquireProduct('Poultry & Fish')">📞 Inquire Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Bulk Affairs Global?</h2>
+                <p>Your trusted partner in agricultural trading</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="icon">✅</div>
+                    <h3>Quality Assurance</h3>
+                    <p>All products are carefully inspected and certified</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">⚡</div>
+                    <h3>Fast & Reliable</h3>
+                    <p>Nationwide delivery with responsive customer service</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">💰</div>
+                    <h3>Competitive Prices</h3>
+                    <p>Fair market prices for both farmers and buyers</p>
+                </div>
+                <div class="why-card">
+                    <div class="icon">🔒</div>
+                    <h3>Secure Transactions</h3>
+                    <p>Safe and transparent payment processing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us today</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>🏢 Company Details</h3>
+                    <p><strong>Bulk Affairs Global Services LTD</strong></p>
+                    <p>📦 Trading & supply of agricultural products & commodities</p>
+                    <p>RC: 7630867</p>
+                    <p>TIN: 1075829679</p>
+                    <br />
+                    <h3>📍 Visit Us</h3>
+                    <p><strong>Abuja Office (HQ):</strong> Abuja, Nigeria</p>
+                    <p><strong>Lagos Office:</strong> Lagos, Nigeria</p>
+                    <br />
+                    <h3>📞 Call Us</h3>
+                    <p><a href="tel:08145542679" style="color:#2e7d32; text-decoration:none; font-weight:bold;">08145542679</a></p>
+                    <br />
+                    <h3>📧 Email Us</h3>
+                    <p><a href="mailto:bulkaffairsglobal@gmail.com" style="color:#2e7d32; text-decoration:none;">bulkaffairsglobal@gmail.com</a></p>
+                    <br />
+                    <h3>💰 Bank Details</h3>
+                    <p><strong>Account Number:</strong> 1313498377</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <input type="tel" id="phone" placeholder="Phone Number" />
+                    <textarea rows="5" id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>🌾 AgriTrade</h2>
+                    <p>Bulk Affairs Global Services LTD</p>
+                    <p style="font-size:14px; opacity:0.7; margin-top:5px;">📦 Trading & supply of agricultural products & commodities. Rice, beans, poultry, fish, & more. Nationwide delivery.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Grains</a></li>
+                        <li><a href="#products">Cassava Products</a></li>
+                        <li><a href="#products">Legumes & Oilseeds</a></li>
+                        <li><a href="#products">Poultry & Fish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/BulkAffairsCo" target="_blank">🐦 X (Twitter)</a>
+                        <a href="https://www.instagram.com/bulkaffairsglobal/" target="_blank">📸 Instagram</a>
+                    </div>
+                    <p style="margin-top:15px; font-size:12px; opacity:0.7;">📍 Abuja, Nigeria<br />Joined June 2026</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bulk Affairs Global Services LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
